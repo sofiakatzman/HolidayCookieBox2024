@@ -38,6 +38,7 @@ img {
 .main {
   max-width: 1200px;
   margin: 0 auto;
+  /* display: flex; */
 }
 
 .cards {
@@ -91,11 +92,11 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding-left: 30px;
-  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+  padding: 15px 30px 10px 30px;
+  /* background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff; */
   background-repeat: no-repeat;
   line-height: 1.2rem;
-  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+  /* -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem; */
 }
 
 .card_content {
@@ -114,7 +115,10 @@ h2.card_title {
   margin: 3% 5% ;
   padding: 50px;
   border-radius: .25rem;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000) 0 0 / 100% 2.4rem;
+
+
 }
 
 /* individual placement for polaroids and tape for each card */
