@@ -5,8 +5,8 @@
 }
 
 :root{
-  --background: #b0d7d9;
-  --background-decor: #d1e9e7;
+  --background: #b4c18e;
+  --background-decor: #cb7272;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     color: #333;
     background:#eee;
     background-color: var(--background);
-    background-image: radial-gradient(var(--background-decor) 20%, transparent 0), radial-gradient(var(--background-decor) 20%, transparent 0);
+    /* background-image: radial-gradient(var(--background-decor) 20%, transparent 0), radial-gradient(var(--background-decor) 20%, transparent 0); */
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
     
@@ -45,8 +45,9 @@ img {
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  justify-content: space-around
 }
 
 .cards_item {
@@ -93,14 +94,15 @@ img {
   flex-direction: column;
   overflow: hidden;
   padding: 15px 30px 10px 30px;
-  /* background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff; */
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(rgba(255, 0, 0, 0.63) 0 0) 30px 0/2px 100% #fff;
   background-repeat: no-repeat;
   line-height: 1.2rem;
-  /* -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem; */
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
 }
 
 .card_content {
   padding: 1.2rem;
+  padding-top: 4px;
 }
 
 h2.card_title,p {
@@ -112,13 +114,12 @@ h2.card_title {
 
 .hero{
   background-color: white;
-  margin: 3% 5% ;
+  margin: 7% 5% 3% 5%;
   padding: 50px;
   border-radius: .25rem;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000) 0 0 / 100% 2.4rem;
-
-
+  transform: rotate(-1deg);
 }
 
 /* individual placement for polaroids and tape for each card */
@@ -290,4 +291,40 @@ h2.card_title {
 
 #card-10 .card_image img {
   transform: rotate(2deg);
+}
+
+
+/*  lights  */
+
+.top-left-lights {
+  position: absolute; 
+  /* top: -30%;  */
+  left: 0; 
+  width: 60%; 
+  height: auto; 
+  z-index: 100;
+}
+
+
+
+
+@media (max-width: 920px) {
+  /* .top-left-lights {
+    top: -2%; 
+    width: 500px;
+  } */
+}
+
+@media (max-width: 2200px) {
+  .top-left-lights {
+    top: -2%; 
+    width: 500px;
+  }
+}
+
+@media (max-width: 440px) {
+  .top-left-lights {
+    top: -1%; 
+    width: 100%;
+  }
 }
