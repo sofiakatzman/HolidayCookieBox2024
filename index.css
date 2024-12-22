@@ -116,3 +116,174 @@ h2.card_title {
   border-radius: .25rem;
   -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000) 0 0 / 100% 2.4rem;
 }
+
+/* individual placement for polaroids and tape for each card */
+/* card 1 */
+#card-1 .card_image:before {
+  transform: rotate(88deg);
+  top: 0;
+  left: 50%;
+}
+
+#card-1 .card_image:after {
+  transform: rotate(88deg);
+  bottom: -22px;
+  left: 52%;
+}
+
+#card-1 .card_image img {
+  transform: rotate(-2deg);
+}
+
+/* card 2 */
+#card-2 .card_image:before {
+  transform: rotate(86deg);
+  top: 0;
+  left: 51%;
+}
+
+#card-2 .card_image:after {
+  transform: rotate(89deg);
+  bottom: -22px;
+  left: 53%;
+}
+
+#card-2 .card_image img {
+  transform: rotate(0deg);
+}
+
+/* card 3 */
+#card-3 .card_image:before {
+  transform: rotate(87deg);
+  top: 0;
+  left: 49%;
+}
+
+#card-3 .card_image:after {
+  transform: rotate(90deg);
+  bottom: -22px;
+  left: 51%;
+}
+
+#card-3 .card_image img {
+  transform: rotate(1deg);
+}
+
+/* card 4 */
+#card-4 .card_image:before {
+  transform: rotate(89deg);
+  top: 0;
+  left: 50%;
+}
+
+#card-4 .card_image:after {
+  transform: rotate(86deg);
+  bottom: -22px;
+  left: 52%;
+}
+
+#card-4 .card_image img {
+  transform: rotate(-1deg);
+}
+
+/* card 5 */
+#card-5 .card_image:before {
+  transform: rotate(88deg);
+  top: 0;
+  left: 51%;
+}
+
+#card-5 .card_image:after {
+  transform: rotate(87deg);
+  bottom: -22px;
+  left: 50%;
+}
+
+#card-5 .card_image img {
+  transform: rotate(2deg);
+}
+
+/* card 6 */
+#card-6 .card_image:before {
+  transform: rotate(89deg);
+  top: 0;
+  left: 49%;
+}
+
+#card-6 .card_image:after {
+  transform: rotate(88deg);
+  bottom: -22px;
+  left: 53%;
+}
+
+#card-6 .card_image img {
+  transform: rotate(0deg);
+}
+
+/* card 7 */
+#card-7 .card_image:before {
+  transform: rotate(87deg);
+  top: 0;
+  left: 50%;
+}
+
+#card-7 .card_image:after {
+  transform: rotate(90deg);
+  bottom: -22px;
+  left: 52%;
+}
+
+#card-7 .card_image img {
+  transform: rotate(-1deg);
+}
+
+/* card 8 */
+#card-8 .card_image:before {
+  transform: rotate(86deg);
+  top: 0;
+  left: 51%;
+}
+
+#card-8 .card_image:after {
+  transform: rotate(89deg);
+  bottom: -22px;
+  left: 50%;
+}
+
+#card-8 .card_image img {
+  transform: rotate(1deg);
+}
+
+/* card 9 */
+#card-9 .card_image:before {
+  transform: rotate(88deg);
+  top: 0;
+  left: 50%;
+}
+
+#card-9 .card_image:after {
+  transform: rotate(87deg);
+  bottom: -22px;
+  left: 51%;
+}
+
+#card-9 .card_image img {
+  transform: rotate(-2deg);
+}
+
+/* card 10 */
+#card-10 .card_image:before {
+  transform: rotate(89deg);
+  top: 0;
+  left: 49%;
+}
+
+#card-10 .card_image:after {
+  transform: rotate(86deg);
+  bottom: -22px;
+  left: 51%;
+}
+
+#card-10 .card_image img {
+  transform: rotate(2deg);
+}
